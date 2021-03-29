@@ -66,3 +66,60 @@ $(document).ready(function() {
 });
 
 
+const languages = ['HTML', 'CSS', 'JavaScript'];
+
+languages.forEach(function(language) {
+  debugger;
+  // language = languages[i] = "HTML"
+  alert('I love ' + language + '!');
+});
+
+// for (let i = 0; i < languages.length; i += 1) {
+//   // 0 => languages[i] = "HTML"
+//   alert( languages[i] );
+// }
+
+
+// const languages = ['HTML', 'CSS', 'JavaScript'];
+
+// // this won't work
+// languages.forEach(function printALanguage(language) {
+//   alert('I love ' + language + '!');
+// });
+
+
+// // function declaration with name
+// function printALanguage(language) {
+//   alert('I love ' + language + '!');
+// }
+
+// const printALanguage = function(language) { 
+//   // blah
+// }
+
+// // this will work
+// languages.forEach(printALanguage);
+
+let thingsILike = "I like...";
+const thing = "bubble baths";
+
+thingsILike = thingsILike.concat(" " + thing + "!");
+thingsILike = thingsILike + " " + thing + "!"
+thingsILike += " " + thing + "!"
+
+const array1 = ['2', '3', '4'];
+const array2 = [ 2, 3, 4];
+const array3 = array1.concat(array2);
+const array4 = [...array1 + array2];
+
+console.log(array3);
+// expected output: Array ["a", "b", "c", "d", "e", "f"]
+
+const numberArray = []
+array1.forEach(function(value) {
+  // Number(value)
+  // Number.parseInt(value)
+  const numberValue = parseInt(value)
+  numberArray.push(numberValue)
+});
+
