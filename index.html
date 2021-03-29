@@ -9,10 +9,34 @@
     crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   
-  <title>A fantastical adventure</title>
+  <title>Favorite Things</title>
 </head>
 <body>
-  <section>
+
+  <section class="container-fluid">
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Favorite Things!</h1>
+      </div>
+    </div>
+
+    <form class="container"> 
+      <h2>Please input four of your favorite things:</h2>
+      <div class="col">
+        <label for="thing1">Thing 1</label>
+        <input type="text" id="thing1" name="thing1" />
+        <label for="thing2">Thing 2</label>
+        <input type="text" id="thing2" name="thing2" />
+      </div>
+      <div class="col">
+        <label for="thing3">Thing 3</label>
+        <input type="text" id="thing3" name="thing3" />
+        <label for="thing4">Thing 4</label>
+        <input type="text" id="thing4" name="thing4" />
+      </div>
+      <div type="submit" class="btn btn-outline-info btn-block btn-lg">Submit Form!</div>
+    </form>
 
   </section>
 
